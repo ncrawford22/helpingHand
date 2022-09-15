@@ -111,6 +111,12 @@ function changePlayerOneFace() {
 function updatePlayerStats() {
     let playerOneStats = document.querySelector('.pOneStats');
     let playerTwoStats = document.querySelector('.pTwoStats');
+    let playerOneNameBox = document.querySelector('.nameBoxPlayer1');
+    let playerTwoNameBox = document.querySelector('.nameBoxPlayer2');
+
+    playerOneNameBox.innerHTML = `Player 1: ${player1.name}`;
+    playerTwoNameBox.innerHTML = `Player 2: ${player2.name}`;
+
 
     playerOneStats.innerHTML = `Name: ${player1.name} <br>
                                 Happiness: ${player1.happiness} <br>
