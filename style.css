@@ -38,21 +38,33 @@ align-items: center;
 
 }
 #playerOneImg {
-    border: 1px solidblack;
     width: 20vw;
     height: 40vh;
     background-color: red;
     background-size: cover ;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 20px 10px white;
+    box-shadow: 0px 0px 20px 10px red;
     border-radius: 50%;
 }
-.pOneStats{
+#playerStats{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solidblack;
+    width: 15vw;
+    height: 18vh;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px 10px white;
+    border-radius: 2%;
+
+
+}
+#playerStats2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
     width: 15vw;
     height: 15vh;
     text-align: center;
@@ -63,26 +75,141 @@ align-items: center;
 
 }
 #playerTwoImg{
-    border: 1px solidblack;
     width: 20vw;
     height: 40vh;
-    background-color: lightblue;
+    background-color: green;
     background-size: cover ;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 20px 10px white;
+    box-shadow: 0px 0px 20px 10px green;
     border-radius: 50%;
 }
-.pTwoStats{
+.pTwoStats, .pOneStats{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solidblack;
     width: 15vw;
-    height: 15vh;
+    height: 18vh;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.5em;
     box-shadow: 0px 0px 20px 10px white;
 
 }
+
+.playerOneButtonContainer{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vw;
+    bottom: 54px;
+    left: 2%;
+    color: black;
+}
+
+.playerTwoButtonContainer{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vw;
+    bottom: 54px;
+    right: 0%;
+    color: black;
+}
+
+#school, #work, #relationship, #family, #stress, #trigger, #discourage {
+    box-shadow: 0 4px 6px 0 black;
+}
+
+#school:hover, #work:hover, #relationship:hover, #family:hover, #stress:hover, #trigger:hover, #discourage:hover {
+    background-color: red;
+    box-shadow: 0 4px 6px 0 red;
+}
+
+#sleep, #medication, #food, #exercise, #therapy, #friendship {
+    box-shadow: 0 4px 6px 0 black;
+}
+
+#sleep:hover, #medication:hover, #food:hover, #exercise:hover, #therapy:hover, #friendship:hover {
+    background-color: green;
+    box-shadow: 0 4px 6px 0 green;
+}
+
+.dialogueBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25vw;
+    height: 15vh;
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    left: 37.5%;
+    right: 0;
+    color: black;
+    text-align: center;
+    box-shadow: 3px 3px 5px 6px black;
+
+}
+
+#infoBoard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 42%;
+    right: 0;
+    color: black;
+    text-align: center;
+    box-shadow: 3px 3px 5px 6px black;
+}
+
+/*Codepen*/
+#playerOneOptions {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 25px;
+    bottom: 150px;
+    left: 50px;
+  }
+
+#playerTwoOptions {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 25px;
+    bottom: 150px;
+    right: 90px;
+  }
+  .options span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    animation: dancingLetters 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+
+  @keyframes dancingLetters {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
