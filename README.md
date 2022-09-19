@@ -57,7 +57,7 @@ Next condition has been met (while Player 1's happiness >= 70). New options for 
 
 ![Img-5](./images/helpingHand-5.JPG)
 
-Player 1 has reached the lowest level of Happiness. Player 2's face has changed. Game will reset or close depending on options choses.
+Player 1 has reached the lowest level of Happiness. Player 2's face has changed. Game will reset or close depending on options chosen.
 
 ![Img-6](./images/helpingHand-6.JPG)
 
