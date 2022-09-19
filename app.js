@@ -33,7 +33,7 @@ class playerOne {
 let noSelfChoice = playerOneNoChoice();
 
 // Create an instance for Player One
-let player1 = new playerOne('Nathan', 0, `${noSelfChoice}`); 
+let player1 = new playerOne(0, `${noSelfChoice}`); 
 let currentPlayer = player1;
 
 // Function to choose a random option for Player One
@@ -168,9 +168,9 @@ updatePlayerStatsNoPlayerOne();
 const playerOneFace = document.querySelector('#playerOneImg');
 
 // Image values
-const sadFaceUrl = 'images/sadFace.png';
-const neutralFaceUrl = 'images/neutralFace.png';
-const happyFaceUrl = 'images/happyFace.png';
+const sadFaceUrl = './images/sadFace.png';
+const neutralFaceUrl = './images/neutralFace.png';
+const happyFaceUrl = './images/happyFace.png';
 
 function changePlayerOneFace() {
 
