@@ -41,13 +41,27 @@ Fork the repo into your repository.
 
 ![Img-1](./images/helpingHand-1.JPG)
 
+Start of game after player names have been input.
+
 ![Img-2](./images/helpingHand-2.JPG)
+
+Player 1's issue is auto-generated. While Player 1 happiness is < 50, Player 1's face remains unchanged. Player 2 chooses how to help and Player 1's issue is listed on the board in the center.
 
 ![Img-3](./images/helpingHand-3.JPG)
 
+First condition has been met and Player 1's face has been changed.
+
 ![Img-4](./images/helpingHand-4.JPG)
 
+Next condition has been met (while Player 1's happiness >= 70). New options for Player 1 to begin helping themself heal. Stats block has also been modified to show "Help" instead of "Issue".
+
 ![Img-5](./images/helpingHand-5.JPG)
+
+Player 1 has reached the lowest level of Happiness. Player 2's face has changed. Game will reset or close depending on options choses.
+
+![Img-6](./images/helpingHand-6.JPG)
+
+Player 1 has reached peak happiness. Game (window) closes. 
 
 ## Link
 Play [Helping Hand](https://ncrawford22.github.io/helpingHand/ "Game Link")!

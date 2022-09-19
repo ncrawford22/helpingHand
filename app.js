@@ -164,8 +164,10 @@ let player2 = new playerTwo('Wayne', 10);
 //Show current stats for Players
 updatePlayerStatsNoPlayerOne();
 
-// Select Player One Image HTML element
+// Select Players' Image HTML elements
 const playerOneFace = document.querySelector('#playerOneImg');
+const playerTwoFace = document.querySelector('#playerTwoImg');
+
 
 // Image values
 const sadFaceUrl = './images/sadFace.png';
@@ -174,16 +176,24 @@ const happyFaceUrl = './images/happyFace.png';
 
 function changePlayerOneFace() {
 
-    if (player1.happiness >= 50 && player1.happiness <= 99) {
+    if (player1.happiness < 50 && player1.happiness >= 0) {
+        playerTwoFace.src = happyFaceUrl;
+        playerTwoFace.style.backgroundColor = 'green';
+        playerTwoFace.style.boxShadow = '0px 0px 20px 10px green';
+    } else if (player1.happiness >= 50 && player1.happiness <= 99) {
         playerOneFace.src = neutralFaceUrl;
         playerOneFace.style.boxShadow = '0px 0px 20px 10px yellow';
-        playerOneFace.style.backgroundColor = '0px 0px 20px 10px yellow';
+        playerOneFace.style.backgroundColor = 'yellow';
     } else if (player1.happiness >= 100) {
         playerOneFace.src = happyFaceUrl;
         playerOneFace.style.boxShadow = '0px 0px 20px 10px green';
-        playerOneFace.style.backgroundColor = '0px 0px 20px 10px green';
+        playerOneFace.style.backgroundColor = 'green';
     } else {
         playerOneFace.src = sadFaceUrl;
+        playerOneFace.style.backgroundColor = 'red';
+        playerTwoFace.src = sadFaceUrl;
+        playerTwoFace.style.boxShadow = '0px 0px 20px 10px red';
+        playerTwoFace.style.backgroundColor = 'red';
     }
 }
 
